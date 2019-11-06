@@ -92,5 +92,5 @@ textarea {
 .key.pressed-key {
   transition: background-color 0.2s, border-radius 0.1s;
   border-radius: 20px;
-  background-color: wheat;
+  background-color: wheat !important;
 }

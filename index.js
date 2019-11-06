@@ -7,6 +7,15 @@ let nonTyped=['Tab', 'Backspace', 'Delete', 'CapsLock', 'Enter', 'ShiftLeft', 'A
 
 let container;
 let textArea;
+let capsLock=false;
+let shiftFlag=false;
+let langFlag='ru';
+let state=[];
+let toggledKeys=[];
+let pressedKey;
+let pressedKeys=[];
+keyboardState(capsLock, langFlag, shiftFlag);
+
 createDocument();
 createKeyboard();
 createKeys();
@@ -17,6 +26,59 @@ function createDocument(){
     document.body.append(container);
     textArea=document.createElement('textarea');
     container.append(textArea);
+    window.addEventListener("keydown", keydown, false);
+    window.addEventListener("keyup", keyup, false);
+}
+
+function keydown(event){
+    textArea.focus(); 
+    if(event.code=='Tab'){
+        event.preventDefault(); 
+        textArea.value+='\t';
+    }
+    else if(event.code=='ShiftLeft'){
+        shiftFlag=true; 
+        keyboardState(capsLock, langFlag, shiftFlag); 
+        toggledKeys.push(event.code)
+        updateKeys(); 
+    }
+    else if(event.code=='ShiftRight'){
+        shiftFlag=true; 
+        keyboardState(capsLock, langFlag, shiftFlag); 
+        updateKeys(); 
+    }
+    else if(event.code=='CapsLock'){
+        capsLockSwitch(); 
+        keyboardState(capsLock, langFlag, shiftFlag); 
+        updateKeys();
+    }
+    else if(event.code=='AltLeft')
+        toggledKeys.push(event.code);
+    
+    if(toggledKeys.includes('AltLeft')&&toggledKeys.includes('ShiftLeft')){
+        langSwitch(); 
+        keyboardState(capsLock, langFlag, shiftFlag); 
+        updateKeys();
+        toggledKeys.length=0;
+    }
+    let keySelector='.key.' + event.code;
+    pressedKey=document.querySelector(keySelector);
+    if(pressedKey){
+        pressedKey.classList.add('pressed-key'); 
+        pressedKeys.push(pressedKey);
+    }
+}
+
+function keyup(event){
+    if(event.code=='ShiftLeft'||event.code=='ShiftRight'){
+        shiftFlag=false; 
+        keyboardState(capsLock, langFlag, shiftFlag); 
+        updateKeys();
+    }
+    for(let item of pressedKeys)
+        item.classList.remove('pressed-key');
+    pressedKeys.length=0;
+    toggledKeys.length=0;
 }
 
 function createKeyboard(){
@@ -75,4 +137,35 @@ function createKeys(){
         curRow.append(key);
         key.append(span);      
     }
+}
+
+function keyboardState(capsLock, langFlag, shiftFlag){
+    if(capsLock==false&&langFlag=='ru'&&shiftFlag==false)
+        state=smallRussian;
+    else if(capsLock==false&&langFlag=='en'&&shiftFlag==false)
+        state=smallEnglish;
+    else if(langFlag=='ru'&&(shiftFlag==true||capsLock==true))
+        state=bigRussian;
+    else if(langFlag=='en'&&(shiftFlag==true||capsLock==true))
+        state=bigEnglish;
+}
+
+function updateKeys(){
+    let keys=document.querySelectorAll('span')
+    for(let i=0;i<keys.length;i++)
+        keys[i].innerHTML=state[i];
+}
+
+function langSwitch(){
+    if(langFlag=='ru')
+        langFlag='en';
+    else
+        langFlag='ru';
+}
+
+function capsLockSwitch(){
+    if(capsLock==false)
+        capsLock=true;
+    else
+        capsLock=false;
 }
