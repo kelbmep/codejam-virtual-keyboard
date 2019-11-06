@@ -1,9 +1,9 @@
-let codes=['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace', 'Tab', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash', 'Delete', 'CapsLock', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter', 'ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ArrowUp', 'ShiftRight', 'ControlLeft', 'AltLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight'];
-let smallEnglish=['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace', 'Tab', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', '\\', 'Del', 'CapsLock', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', '\'', 'Enter', 'Shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ', ', '.', '/', '▲', 'Shift', 'Ctrl', 'Alt', ' ', 'Alt', '◄', '▼', '►'];
-let bigEnglish=['~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', 'Backspace', 'Tab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{', '}', '|', 'Del', 'CapsLock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':', '"', 'Enter', 'Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?', '▲', 'Shift', 'Ctrl', 'Alt', ' ', 'Alt', '◄', '▼', '►'];
-let smallRussian=['ё', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace', 'Tab', 'й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ъ', '\\', 'Del', 'CapsLock', 'ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э', 'Enter', 'Shift', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', '.', '▲', 'Shift', 'Ctrl', 'Alt', ' ', 'Alt', '◄', '▼', '►'];
-let bigRussian=['Ё', '!', '"', '№', ';', '%', ':', '?', '*', '(', ')', '_', '+', 'Backspace', 'Tab', 'Й', 'Ц', 'У', 'К', 'Е', 'Н', 'Г', 'Ш', 'Щ', 'З', 'Х', 'Ъ', '/', 'Del', 'CapsLock', 'Ф', 'Ы', 'В', 'А', 'П', 'Р', 'О', 'Л', 'Д', 'Ж', 'Э', 'Enter', 'Shift', 'Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю', ', ', '▲', 'Shift', 'Ctrl', 'Alt', ' ', 'Alt', '◄', '▼', '►'];
-let nonTyped=['Tab', 'Backspace', 'Delete', 'CapsLock', 'Enter', 'ShiftLeft', 'ArrowUp', 'ShiftRight', 'ControlLeft', 'AltLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight'];
+let codes=['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace', 'Tab', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash', 'Delete', 'CapsLock', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter', 'ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ArrowUp', 'ShiftRight', 'ControlLeft', 'AltLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight','ControlRight',];
+let smallEnglish=['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace', 'Tab', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', '\\', 'Del', 'CapsLock', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', '\'', 'Enter', 'Shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ', ', '.', '/', '▲', 'Shift', 'Ctrl', 'Alt', ' ', 'Alt', '◄', '▼', '►', 'Ctrl'];
+let bigEnglish=['~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', 'Backspace', 'Tab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{', '}', '|', 'Del', 'CapsLock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':', '"', 'Enter', 'Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?', '▲', 'Shift', 'Ctrl', 'Alt', ' ', 'Alt', '◄', '▼', '►', 'Ctrl'];
+let smallRussian=['ё', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace', 'Tab', 'й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ъ', '\\', 'Del', 'CapsLock', 'ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э', 'Enter', 'Shift', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', '.', '▲', 'Shift', 'Ctrl', 'Alt', ' ', 'Alt', '◄', '▼', '►', 'Ctrl'];
+let bigRussian=['Ё', '!', '"', '№', ';', '%', ':', '?', '*', '(', ')', '_', '+', 'Backspace', 'Tab', 'Й', 'Ц', 'У', 'К', 'Е', 'Н', 'Г', 'Ш', 'Щ', 'З', 'Х', 'Ъ', '/', 'Del', 'CapsLock', 'Ф', 'Ы', 'В', 'А', 'П', 'Р', 'О', 'Л', 'Д', 'Ж', 'Э', 'Enter', 'Shift', 'Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю', ', ', '▲', 'Shift', 'Ctrl', 'Alt', ' ', 'Alt', '◄', '▼', '►', 'Ctrl'];
+let nonTyped=['Tab', 'Backspace', 'Delete', 'CapsLock', 'CapsLock pressed-key', 'Enter', 'ShiftLeft', 'ArrowUp', 'ShiftRight', 'ControlLeft', 'AltLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'ControlRight'];
 
 let container;
 let textArea;
@@ -122,7 +122,7 @@ function createKeys(){
             }
         }
         if(i==4){
-            for(let j=0; j<7;j++){
+            for(let j=0; j<8;j++){
                 textFill(curRow, count);
                 count++;
             }
@@ -135,9 +135,55 @@ function createKeys(){
         let span=document.createElement('span');
         span.innerHTML=smallRussian[count];
         curRow.append(key);
-        key.append(span);      
+        key.append(span);
+        key.addEventListener('click', mouseClick, false);      
     }
 }
+
+function mouseClick(event){
+    let key=event.currentTarget;
+    let classOfKey;
+    classOfKey=key.getAttribute('class').slice(4);
+    if(!nonTyped.includes(classOfKey))
+        textArea.value=textArea.value+state[codes.indexOf(classOfKey)];
+    
+    else{  
+        textArea.focus(); 
+        if(classOfKey=='Tab')
+            textArea.value+='\t';
+        else if(classOfKey=='Enter')
+            textArea.value+='\n';
+        else if(classOfKey=='CapsLock')
+        {
+            if(!capsLock)
+                capsLock=true;
+            key.classList.add('pressed-key');
+            keyboardState(capsLock, langFlag, shiftFlag); 
+            updateKeys();
+        }
+        else if(classOfKey=='CapsLock pressed-key')
+        {
+            if(capsLock)
+                capsLock=false;
+            key.classList.remove('pressed-key')
+            keyboardState(capsLock, langFlag, shiftFlag); 
+            updateKeys();
+        }
+        else if(classOfKey=='ShiftLeft')
+        {
+            shiftFlag=true;
+            keyboardState(capsLock, langFlag, shiftFlag); 
+            updateKeys();
+        }
+        else if(classOfKey=='Backspace')
+            textArea.value=textArea.value.slice(0, textArea.value.length - 1);
+    }
+    
+    key.classList.add('pressed-key');
+    setTimeout(()=>{shiftFlag=false; keyboardState(capsLock, langFlag, shiftFlag); updateKeys()}, 250);
+    if(classOfKey!=='CapsLock')
+        setTimeout(()=>{key.classList.remove('pressed-key')}, 250);
+};
 
 function keyboardState(capsLock, langFlag, shiftFlag){
     if(capsLock==false&&langFlag=='ru'&&shiftFlag==false)
