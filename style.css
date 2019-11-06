@@ -1,0 +1,96 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 100%;
+  height: 220px;
+  font-size: 40px;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  width: 97.5%;
+  height: 250px;
+  padding: 10px 0 0 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.key {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #a887d3;
+  height: 40px;
+  width: 40px;
+  border: black 1px solid;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.key.Backspace {
+  width: 110px;
+  font-size: 15px;
+  background-color: #515091;
+}
+
+.key.Tab {
+  width: 80px;
+  background-color: #515091;
+}
+
+.key.Delete {
+  width: 50px;
+  background-color: #515091;
+}
+
+.key.CapsLock {
+  width: 100px;
+  background-color: #515091;
+}
+
+.key.Enter {
+  width: 75px;
+  background-color: #515091;
+}
+
+.key.ShiftLeft {
+  width: 95px;
+  background-color: #515091;
+}
+
+.key.ShiftRight {
+  width: 90px;
+  background-color: #515091;
+}
+
+.key.ControlLeft {
+  width: 50px;
+}
+
+.key.Space {
+  width: 400px;
+}
+
+.row.row5 .key {
+  background-color: #515091;
+}
+
+.row.row4 .key:nth-child(12) {
+  background-color: #515091;
+}
+
+.key.pressed-key {
+  transition: background-color 0.2s, border-radius 0.1s;
+  border-radius: 20px;
+  background-color: wheat !important;
+}
